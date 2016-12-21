@@ -1,10 +1,21 @@
 <% provide(:title, "Home") %>
 
- <body>
-   <h1>Sample App Home</h1>
+<div class = "center jumbotron">
+  <h1>Welcome to the Sample App</h1>
+
+  <h2>This is the homepage for the tutorial.</h2>
+
+  <%= link_to "Sign up now by clickign here!", '#', class: "btn btn-lg btn-primary" %>
+</div>
+
+<body>
    <p>
      This is the home page for the RoR tutorial.
   </p>
 
+  <%= image_tag("rails.png", alt: "Ruby Rails logo") %>
+  <%= image_tag("kitten.jpg", alt: "fuck your alt text") %>
+
 </body>
+
 </html>
