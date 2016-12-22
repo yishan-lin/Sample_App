@@ -15,7 +15,4 @@ class StaticPagesController < ApplicationController
   def team
   end
 
-  def sign_up
-  end
-
 end
