@@ -21,4 +21,10 @@ class StaticPagesController < ApplicationController
   def admin
   end
 
+  def buy
+  end
+
+  def sell
+  end
+
 end

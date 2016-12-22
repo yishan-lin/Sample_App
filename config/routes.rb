@@ -11,6 +11,8 @@ Rails.application.routes.draw do
   get "/sponsor", to: "static_pages#sponsor"
   get "/login", to: "users#old"
   get "/admin", to: "static_pages#admin"
+  get "/buy", to: "static_pages#buy"
+  get "/sell", to: "static_pages#sell"
   #get 'static_pages/help'
   #get 'static_pages/about'
   #get 'static_pages/contact'
