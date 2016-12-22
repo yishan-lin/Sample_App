@@ -15,4 +15,10 @@ class StaticPagesController < ApplicationController
   def team
   end
 
+  def sponsor
+  end
+
+  def admin
+  end
+
 end

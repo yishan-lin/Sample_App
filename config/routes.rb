@@ -7,6 +7,10 @@ Rails.application.routes.draw do
   get "/contact", to: "static_pages#contact"
   get "/team", to: "static_pages#team"
   get "/signup", to: "users#new"
+
+  get "/sponsor", to: "static_pages#sponsor"
+  get "/login", to: "users#old"
+  get "/admin", to: "static_pages#admin"
   #get 'static_pages/help'
   #get 'static_pages/about'
   #get 'static_pages/contact'
