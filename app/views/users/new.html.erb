@@ -1,4 +1,22 @@
-<h1>Users#new</h1>
-<p>Find me in app/views/users/new.html.erb</p>
+<%= provide(:title, "Sign Up") %>
+<h1>Sign Up</h1>
 
-<%= image_tag("new.png", alt: "shitty alt for non loaders") %>
+<div class= "row">
+  <div class = "col-md-6  col-md-offset-3">
+    <%= form_for(@user) do |x| %>
+      <%= x.label :Your_name %>
+      <%= x.text_field :name %>
+
+      <%= x.label :EMAIL_ADDRESS %>
+      <%= x.text_field :email %>
+
+      <%= x.label :Your_Password %>
+      <%= x.text_field :password %>
+
+      <%= x.label :Confirm_Password %>
+      <%= x.text_field :password_confirmation%>
+
+      <%= x.submit "Create an account", class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>

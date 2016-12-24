@@ -1,4 +1,19 @@
-<h1>Users#SHOW</h1>
-<p>SHOW VIEW PAGE</p>
+<% provide(:title, @user.name) %>
+    <div class= "row">
+      <aside class="col-md-4">
+        <section class = "user_info">
+  <h1>
+    <%= gravatar_for @user %>
+    <%= @user.name %>
+  </h1>
+</section>
+</aside>
+</div>
 
-<%= @user.name %>, <%= @user.email %>, <%= @user.created_at %>
+<h1>Users#SHOW</h1>
+<center><h2>SHOW VIEW PAGE</h2></center>
+
+<%= @user.name %>, <%= @user.email %>, <%= @user.created_at %>, <%= @user.updated_at %>, <%= @user.password_digest %>
+
+<br><br>
+<strong>Time Now:  </strong>  <%= Time.now %>
