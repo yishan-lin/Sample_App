@@ -13,4 +13,14 @@ class UsersController < ApplicationController
     @user = User.new
   end
 
+  def create
+    @user = User.new(params[:id])
+    if @user.save?
+      #do_something
+    else
+      render 'new'
+    end
+
+  end
+
 end
