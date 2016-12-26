@@ -14,13 +14,21 @@ class UsersController < ApplicationController
   end
 
   def create
-    @user = User.new(params[:id])
-    if @user.save?
+    @user = User.new(user_params)
+    if @user.save
       #do_something
     else
       render 'new'
+      #render @user.errors.full_messages
     end
 
-  end
+end
+
+private
+
+    def user_params
+      params.require(:user).permit(:name, :email, :password, :password_confirmation, :comment)
+    end
+
 
 end
